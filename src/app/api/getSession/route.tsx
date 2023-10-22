@@ -5,7 +5,7 @@ import Stripe from "stripe";
 import { sanityAdminClient, sanityClient } from "../../../lib/sanity-client";
 const stripe: Stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
-export const generateRandomString = (length: number) => {
+const generateRandomString = (length: number) => {
   let result = "";
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
